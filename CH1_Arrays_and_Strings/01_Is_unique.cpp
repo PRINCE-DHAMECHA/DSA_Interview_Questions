@@ -43,3 +43,9 @@ int main()
     cout << isUnique("qwerty") << endl;
     return 0;
 }
+
+//! If we don't have additional DS
+
+//~ Approach-4 :- Sort given string O(nlogn)
+
+//~ Approach-5 :- Compare each character with all other O(n^2)
