@@ -36,14 +36,17 @@ string infixToPostfix(string s)
     string res;
     for (auto c : s)
     {
+        //* If we encounter variable then directly add it
         if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9'))
         {
             res += c;
         }
+        //* push opening bracket
         else if (c == '(')
         {
             st.push('(');
         }
+        //* pop stack until ( if you encounter )
         else if (c == ')')
         {
             while (st.top() != '(')
@@ -56,6 +59,7 @@ string infixToPostfix(string s)
         }
         else
         {
+            //* pop all operator with prec higher than current one and push current one
             while (!st.empty() && prec(c) < prec(st.top()))
             {
                 res += st.top();
@@ -64,6 +68,7 @@ string infixToPostfix(string s)
             st.push(c);
         }
     }
+    //* pop remaining stack
     while (!st.empty())
     {
         res += st.top();
