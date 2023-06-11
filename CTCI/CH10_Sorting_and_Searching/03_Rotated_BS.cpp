@@ -12,6 +12,9 @@ using namespace std;
     ios::sync_with_stdio(0);                              \
     cin.tie(0)
 
+//~ Approach:
+//* At any mid we can say that either side will be sorted, so recurse accordingly.
+
 int search(vector<int> v, int low, int high, int key)
 {
     if (low <= high)
