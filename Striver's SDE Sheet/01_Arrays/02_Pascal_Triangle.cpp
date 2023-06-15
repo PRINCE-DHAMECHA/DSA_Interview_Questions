@@ -17,6 +17,7 @@ using namespace std;
     ios::sync_with_stdio(0);                              \
     cin.tie(0)
 
+//~ Approach:
 //* Pretty much straight forward
 vector<vector<int>> generate(int numRows)
 {

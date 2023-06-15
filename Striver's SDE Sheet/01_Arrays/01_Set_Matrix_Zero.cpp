@@ -12,6 +12,7 @@ using namespace std;
     ios::sync_with_stdio(0);                              \
     cin.tie(0)
 
+//~ Approach:
 //* Here we use first row and first column as boolean which indicates that which row and col we need to make zero
 //* Ex:- if we encounter matrix[2,3] as 0 then we make matrix[0,3] and matrix[2,0] zero and after this nested loop we check first ro and col and if it's zero then we make corresponding row or col zero.
 //* To use first row and col first we need to check whether that row or col will be zero or not
