@@ -79,7 +79,7 @@ int mergeSort(vector<int> &arr, int low, int high)
     cnt += mergeSort(arr, low, mid);
     cnt += mergeSort(arr, mid + 1, high);
     //* Only change need to done
-    //* We count pairs using two pointer for two sorted array
+    //* We count pairs using two pointers for two sorted array
     cnt += countPairs(arr, low, mid, high);
     merge(arr, low, mid, high);
     return cnt;
