@@ -60,7 +60,7 @@ string infixToPostfix(string s)
         else
         {
             //* pop all operator with prec higher than current one and push current one
-            while (!st.empty() && prec(c) < prec(st.top()))
+            while (!st.empty() && prec(c) <= prec(st.top()))
             {
                 res += st.top();
                 st.pop();
