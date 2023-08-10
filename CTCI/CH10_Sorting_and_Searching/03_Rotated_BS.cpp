@@ -68,7 +68,7 @@ int search(vector<int> v, int low, int high, int key)
                 }
                 else
                 {
-                    res;
+                    return res;
                 }
             }
         }
