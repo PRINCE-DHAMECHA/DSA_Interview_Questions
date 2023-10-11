@@ -23,7 +23,7 @@ using namespace std;
 //* We can use similar approach which we used in problem-01, i.e. using bit vector with single int
 //* We can make bit to 1 if it's odd and 0 for even
 //* At the end we need to check that at most 1 bit should be 1
-//^ Trick: How to check for at most one bit is 0?
+//^ Trick: How to check for at most one bit is 1?
 //* Compare first with 0 -> if same return true
 //* (i) AND (i-1) -> if 0 return true else false
 //* Ex:- i=0010000, i-1=0001111 -> ans:- 0000000 -> true
